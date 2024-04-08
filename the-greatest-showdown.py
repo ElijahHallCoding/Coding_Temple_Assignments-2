@@ -35,19 +35,12 @@ print("The smallest number among", num1, ",", num2, ", and", num3, "is", smalles
 # Checking for equality among the numbers
 if num1 == num2 == num3:
     print("All numbers are equal.")
-elif num1 == num2 or num1 == num3 or num2 == num3:
-    equal_numbers = []
-    if num1 == num2:
-        equal_numbers.append(1)
-        equal_numbers.append(2)
-    if num1 == num3:
-        equal_numbers.append(1)
-        equal_numbers.append(3)
-    if num2 == num3:
-        equal_numbers.append(2)
-        equal_numbers.append(3)
-    print("Two numbers are equal and the largest.")
-    print(f"The numbers at positions {', '.join(map(str, equal_numbers))} are equal.")
+elif num1 == num2:
+    print(f"Two numbers are equal and the largest. The numbers at positions 1 and 2 are equal.")
+elif num1 == num3:
+    print(f"Two numbers are equal and the largest. The numbers at positions 1 and 3 are equal.")
+elif num2 == num3:
+    print(f"Two numbers are equal and the largest. The numbers at positions 2 and 3 are equal.")
 else:
     print("The smallest number is", smallest)
     print("The largest number is", largest)
